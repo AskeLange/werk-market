@@ -10,7 +10,7 @@
 @layer base {
 	body {
 		@apply overflow-hidden m-0;
-		@apply font-secondary text-black;
+		@apply font-secondary text-red;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -27,7 +27,7 @@
 	/* Layouts */
 	*[class^='l-']:not(*[class^='l-'] *[class^='l-']) {
 		@apply fixed top-0 left-0 w-screen h-screen;
-		@apply overflow-y-scroll bg-white;
+		@apply overflow-y-scroll bg-black;
 	}
 
 	/* Blocks */

@@ -67,8 +67,8 @@ module.exports = {
 		},
 
 		fontFamily: {
-			primary: 'Helvetica Neue',
-			secondary: 'Helvetica Neue',
+			primary: 'Copyright (C) H&Co | typography.com',
+			secondary: 'Copyright (C) H&Co | typography.com',
 		},
 
 		fontWeight: {
@@ -76,6 +76,7 @@ module.exports = {
 			medium: '500',
 			semibold: '600',
 			bold: '700',
+			black: '900',
 		},
 
 		lineHeight: {
@@ -87,6 +88,7 @@ module.exports = {
 		colors: {
 			white: 'var(--color-white)',
 			black: 'var(--color-black)',
+			red: 'var(--color-red)',
 
 			transparent: 'transparent',
 			current: 'currentColor',
