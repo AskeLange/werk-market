@@ -1,0 +1,69 @@
+:root {
+	/* General grid fields */
+	--grid-spacing-layout-margin: 72px;
+	--grid-spacing-layout-gutter: 24px;
+
+	/* Intermediate values */
+	--grid-vw: calc(100vw - var(--grid-spacing-layout-margin) * 2);
+	--grid-vss: calc(var(--grid-vw) - (var(--grid-spacing-layout-gutter) * 11));
+	--grid-cw: calc(var(--grid-vss) / 12);
+
+	--grid-mobile-vw: calc(100vw - var(--grid-spacing-layout-margin) * 2);
+	--grid-mobile-vss: calc(var(--grid-vw) - (var(--grid-spacing-layout-gutter) * 4));
+	--grid-mobile-cw: calc(var(--grid-vss) / 5);
+
+	/* Desktop column widths */
+	--grid-spacing-1-12col: calc(
+		1 * var(--grid-cw) + 0 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-2-12col: calc(
+		2 * var(--grid-cw) + 1 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-3-12col: calc(
+		3 * var(--grid-cw) + 2 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-4-12col: calc(
+		4 * var(--grid-cw) + 3 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-5-12col: calc(
+		5 * var(--grid-cw) + 4 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-6-12col: calc(
+		6 * var(--grid-cw) + 5 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-7-12col: calc(
+		7 * var(--grid-cw) + 6 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-8-12col: calc(
+		8 * var(--grid-cw) + 7 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-9-12col: calc(
+		9 * var(--grid-cw) + 8 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-10-12col: calc(
+		10 * var(--grid-cw) + 9 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-11-12col: calc(
+		11 * var(--grid-cw) + 10 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-12-12col: calc(
+		12 * var(--grid-cw) + 11 * var(--grid-spacing-layout-gutter)
+	);
+
+	/* Mobile column widths */
+	--grid-spacing-1-5col: calc(
+		1 * var(--grid-mobile-cw) + 0 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-2-5col: calc(
+		2 * var(--grid-mobile-cw) + 1 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-3-5col: calc(
+		3 * var(--grid-mobile-cw) + 2 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-4-5col: calc(
+		4 * var(--grid-mobile-cw) + 3 * var(--grid-spacing-layout-gutter)
+	);
+	--grid-spacing-5-5col: calc(
+		5 * var(--grid-mobile-cw) + 4 * var(--grid-spacing-layout-gutter)
+	);
+}

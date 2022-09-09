@@ -1,0 +1,39 @@
+{
+	"name": "nuxt-boilerplate",
+	"version": "0.0.0",
+	"private": true,
+	"author": {
+		"name": "Aske K. Lange",
+		"email": "ala@limbo.works"
+	},
+	"scripts": {
+		"dev": "nuxt",
+		"new": "yarn plop",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --ext .js .",
+		"husky": "husky install",
+		"release": "standard-version"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.0.2",
+		"@commitlint/config-conventional": "^16.0.0",
+		"@nuxtjs/tailwindcss": "^4.2.0",
+		"core-js": "^3.15.1",
+		"eslint": "^8.1.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-vue": "^7.20.0",
+		"husky": "^7.0.0",
+		"lazysizes": "^5.3.2",
+		"lint-staged": "^12.1.7",
+		"nuxt": "^2.15.7",
+		"plop": "^2.7.6",
+		"postcss": "^8.3.5",
+		"prettier": "2.4.1",
+		"standard-version": "^9.3.2"
+	},
+	"dependencies": {
+		"@nuxtjs/svg": "^0.4.0"
+	}
+}

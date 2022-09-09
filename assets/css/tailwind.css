@@ -1,0 +1,45 @@
+/* Imports */
+@import './settings/index.css';
+
+/* Tailwind Layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Layer */
+@layer base {
+	body {
+		@apply overflow-hidden m-0;
+		@apply font-secondary text-black;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-primary;
+	}
+
+	* {
+		@apply box-border;
+	}
+}
+
+/* Component Layer */
+@layer components {
+	/* Layouts */
+	*[class^='l-']:not(*[class^='l-'] *[class^='l-']) {
+		@apply fixed top-0 left-0 w-screen h-screen;
+		@apply overflow-y-scroll bg-white;
+	}
+
+	/* Blocks */
+	/* *[class^='b-']:not(*[class^='b-'] *[class^='b-']) {
+		margin-top: var(--m-block-margin-y);
+		margin-bottom: var(--m-block-margin-y);
+	}
+
+	@screen >=768 {
+		*[class^='b-']:not(*[class^='b-'] *[class^='b-']) {
+			margin-top: var(--block-margin-y);
+			margin-bottom: var(--block-margin-y);
+		}
+	} */
+}
